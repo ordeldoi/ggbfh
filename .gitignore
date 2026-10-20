@@ -1,0 +1,12 @@
+# Internes Markenmanual nicht veröffentlichen
+*.pdf
+
+# Erzeugte Dateien
+output/
+*.tar.gz
+*.Rcheck/
+
+# R / RStudio
+.Rhistory
+.RData
+.Rproj.user/

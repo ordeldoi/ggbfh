@@ -1,0 +1,24 @@
+Package: ggbfh
+Type: Package
+Title: BFH-Stil für ggplot2-Grafiken
+Version: 0.1.0
+Authors@R: person("Oliver", "Lehmann", email = "otlehmann@gmail.com",
+    role = c("aut", "cre"))
+Description: Theme, Farbpaletten und Farbskalen für ggplot2, angelehnt an das
+    Markendesign der Berner Fachhochschule (BFH). Die Farbwerte stammen aus dem
+    BFH-Markenmanual; als Schrift wird Lucida Sans verwendet.
+License: file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 4.1)
+Imports:
+    ggplot2 (>= 4.0.0),
+    grDevices,
+    grid,
+    scales,
+    systemfonts,
+    tools
+Suggests:
+    colorspace,
+    ragg
+Config/roxygen2/version: 8.1.1
