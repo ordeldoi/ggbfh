@@ -8,6 +8,8 @@ Description: Theme, Farbpaletten und Farbskalen für ggplot2, angelehnt an das
     Markendesign der Berner Fachhochschule (BFH). Die Farbwerte stammen aus dem
     BFH-Markenmanual; als Schrift wird Lucida Sans verwendet.
 License: file LICENSE
+URL: https://github.com/ordeldoi/ggbfh
+BugReports: https://github.com/ordeldoi/ggbfh/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 Depends: R (>= 4.1)

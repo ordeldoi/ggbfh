@@ -6,13 +6,15 @@ BFH-Markenmanual, als Schrift wird Lucida Sans verwendet.
 ## Installation
 
 ```r
-# aus dem lokalen Ordner (bzw. Netzlaufwerk)
-install.packages("pfad/zu/ggplot_bfh", repos = NULL, type = "source")
+install.packages("remotes")
+remotes::install_github("ordeldoi/ggbfh")
+install.packages("ragg")   # für die Schrift
 ```
 
-Benötigt ggplot2 ≥ 4.0. Für die korrekte Schriftdarstellung zusätzlich `ragg`
-installieren und in RStudio unter *Tools › Global Options › General › Graphics*
-das Backend auf **AGG** stellen.
+Aktualisieren geht mit demselben Befehl. Benötigt R ≥ 4.1 und ggplot2 ≥ 4.0
+(wird bei Bedarf mitinstalliert). Damit Lucida Sans korrekt erscheint, in
+RStudio unter *Tools › Global Options › General › Graphics* das Backend auf
+**AGG** stellen.
 
 ## Verwendung
 
@@ -48,6 +50,7 @@ bfh_save("grafik.png", width = 16, height = 10)   # cm
   beschriften oder gruppieren.
 - Farbfamilien (`"blau"` usw.) werden bei mehr als 3 Kategorien automatisch
   über einen Verlauf bis zu einer aufgehellten Farbe erweitert.
+- `"highlight"` passt zu einer logischen Variable: `FALSE` grau, `TRUE` orange.
 - Geordnete Faktoren (`ordered`) erhalten beim Laden des Pakets die
   Farbfamilie Blau als Standard (über die Optionen `ggplot2.ordinal.colour`
   und `ggplot2.ordinal.fill`, sofern diese nicht schon gesetzt sind).
@@ -68,4 +71,3 @@ roxygen2::roxygenise()
 Danach neu installieren (`R CMD INSTALL .`). Testgrafiken erzeugen
 `dev/gallery.R` (einzelne PNGs) und `dev/gallery_pdf.R`
 (`output/ggbfh_galerie.pdf`, eine Seite pro Diagrammtyp).
-- `"highlight"` passt zu einer logischen Variable: `FALSE` grau, `TRUE` orange.

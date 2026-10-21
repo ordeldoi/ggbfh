@@ -120,8 +120,8 @@ add(text_page(list(
     "Beispielgrafiken für viele Diagrammtypen und Optionen.")),
   list(type = "h2", text = "Installation", col = 1),
   list(type = "code", col = 1, text = c(
-    "install.packages(\"ggbfh_0.1.0.tar.gz\",",
-    "                 repos = NULL, type = \"source\")",
+    "install.packages(\"remotes\")",
+    "remotes::install_github(\"ordeldoi/ggbfh\")",
     "install.packages(\"ragg\")  # für die Schrift")),
   list(type = "p", col = 1, text = paste(
     "Benötigt R ≥ 4.1 und ggplot2 ≥ 4.0. Damit Lucida Sans korrekt",
