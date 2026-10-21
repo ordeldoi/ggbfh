@@ -33,6 +33,23 @@ bfh_save("grafik.png", width = 16, height = 10)   # cm
 `theme_bfh()` setzt die BFH-Standardpalette bereits als Vorgabe. Eine
 `scale_*_bfh()` braucht es nur für andere Paletten.
 
+## Beispiele
+
+<table>
+<tr>
+<td><img src="galerie/02.png" alt="Gruppierte Balken"></td>
+<td><img src="galerie/09.png" alt="Direkte Beschriftung statt Legende"></td>
+</tr>
+<tr>
+<td><img src="galerie/21.png" alt="facet_wrap() mit Regressionsgerade"></td>
+<td><img src="galerie/27.png" alt="Korrelationsmatrix mit Werten"></td>
+</tr>
+</table>
+
+**[Alle 32 Beispiele mit Code ansehen › GALERIE.md](GALERIE.md)**
+
+## Funktionen
+
 | Funktion | Zweck |
 |---|---|
 | `theme_bfh(base_size, grid, legend_position)` | Theme. `grid = "y"/"x"/"xy"/"none"` |
@@ -68,6 +85,13 @@ Kommentaren in `R/` erzeugt. Nach Änderungen:
 roxygen2::roxygenise()
 ```
 
-Danach neu installieren (`R CMD INSTALL .`). Testgrafiken erzeugen
-`dev/gallery.R` (einzelne PNGs) und `dev/gallery_pdf.R`
-(`output/ggbfh_galerie.pdf`, eine Seite pro Diagrammtyp).
+Danach neu installieren (`R CMD INSTALL .`). Die Beispielgrafiken stehen in
+`dev/gallery_plots.R`. `dev/gallery_md.R` erzeugt daraus `GALERIE.md` mit den
+Bildern in `galerie/`, `dev/gallery_pdf.R` dieselben Grafiken als PDF
+(`output/ggbfh_galerie.pdf`).
+
+## Lizenz
+
+Die Nutzung ist Angehörigen der BFH vorbehalten; mit dem Paket erstellte
+Grafiken dürfen frei verwendet werden. Details in [LICENSE](LICENSE). Das Paket
+ist kein offizielles Produkt der BFH.
